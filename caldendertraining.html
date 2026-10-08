@@ -1,0 +1,454 @@
+<!-- ============================================================
+  MSU Digital Capability Development - Internal Operation Dashboard
+  Scoped Class: .msu-internal-section
+============================================================ -->
+<div class="msu-internal-section">
+
+  <!-- Header สำหรับส่วนงานภายในฝ่าย -->
+  <div class="msu-internal-header">
+    <span class="msu-internal-badge">🔒 ระบบสารสนเทศเฉพาะภายในฝ่าย</span>
+    <h2 class="msu-internal-title">ปฏิทินดำเนินงาน ฝ่ายพัฒนาศักยภาพดิจิทัล</h2>
+    <p class="msu-internal-subtitle">สำนักคอมพิวเตอร์ มหาวิทยาลัยมหาสารคาม</p>
+  </div>
+
+  <!-- Layout Main Content & Internal Sidebar -->
+  <div class="msu-internal-grid">
+
+    <!-- ส่วนที่ 1: ระบบแท็บปฏิทินภารกิจภายใน -->
+    <div class="msu-internal-card">
+      
+      <!-- Navigation Tabs -->
+      <div class="msu-tab-nav" role="tablist">
+        <button class="msu-tab-btn active msu-tab-divider" onclick="switchInternalTab(event, 'int-tab-1')" role="tab">
+          📌 ภาพรวม
+        </button>
+        <button class="msu-tab-btn" onclick="switchInternalTab(event, 'int-tab-2')" role="tab">
+          👥 พัฒนาศักยภาพดิจิทัล
+        </button>
+        <button class="msu-tab-btn" onclick="switchInternalTab(event, 'int-tab-3')" role="tab">
+          🏛️ บริการวิชาการ
+        </button>
+        <button class="msu-tab-btn" onclick="switchInternalTab(event, 'int-tab-4')" role="tab">
+          🏛️ บริการจัดสอบ
+        </button>
+        <button class="msu-tab-btn" onclick="switchInternalTab(event, 'int-tab-5')" role="tab">
+          🏛️ การใช้ห้อง B-414
+        </button>
+        <button class="msu-tab-btn" onclick="switchInternalTab(event, 'int-tab-6')" role="tab">
+          🏛️ ตารางสอบ Digital Literacy Exit Exam
+        </button>
+      </div>
+
+      <!-- Tab Content 1: ภาพรวม -->
+      <div id="int-tab-1" class="msu-tab-content active" role="tabpanel">
+        <div class="msu-iframe-wrapper">
+          <iframe 
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FBangkok&showPrint=0&src=dHJhaW5pbmcuY29tY2VudGVyQG1zdS5hYy50aA&src=Y18xZGZhMmFiOWE2ODE0ZjYzNmU3NjA4ZTg0YzFmNWU2YzVmNDQwNGZiNjIyYjc3NTFlZjYwMzU1ZGZiOWNjYjIxQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y18yMzIzZjNmMGU4MWVhZmU3NjZkMzQ0M2RmMzdhMmI0ZGYwNDBhODJlYjFkOGM4NjdiZjkzZjE1YjNmNGI0NjU0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y18zMmI0ZDE3NjEyYzM0Yzc3NTE2ZTVjZTg2ZGQ3ZDZiZWNjM2UzY2NkOGQwYzNmNTc5YmUwNmMzNmVlNDE1MTRkQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y181MTE1NGJmZGRiZmNjYmU4MTQ1MmNhZWMxNjA0OGY5NTIwN2UyYmZkYTViMTIyOTQ4MGE3OTY3NTE3NGIwMDE2QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y183ODQ1NmI2ZjlhNDlmODYzZWRmZDM4ZTQzZDEwZjkwMmFlNzRlNzRlNzRiM3JiY2NmYmU5ODBlYzA5MjBjYTEzZGMxQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y184MmU4ZGYxYzM2YjAzZjFlM2FmMDVkMzNlNjE0NDY0NTgwZmYxOTUyZTJkM2Q5YTUyYWYyYjcyNWUwOWQ5YjY0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y1_iOWExYjE2OTJjOTU3YmEyNGRkZTY0OTBjZmRmMDQ2ODAzZjQ1YTY4MmNjZjM1ODJkYmU6OGE1NTIxZTdmNGUyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y1_iY2MyOGU5MzdiYTFiNTIyNGY5YWU0N2E5NTc0NzFkNTFjN2RhYjA5ZDRlZjFlNGRmNDI0MDVhOWRlNTMxNTRkQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y1_kNTIyYzMzZDEwZTkwOGRlNjk3Y2QyODA1MDEzODU0YjIxOTc2N2U0M2I3OTE1M2NkM2RmZjJiNDNjZGMxZWQ5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y1_kNmE8MDY3MGVmY2M4OWQ3Njk3Y2VjMWJmMDBhMTQ4YmQ0MTJiMjhjYmYxYmQ3ZDc2MTc1NjFiZmM4MjZjN2JiQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y1_kYjVlMTJjOWFlZDU1MzEwM2ZiOTZjNWUwMTFkNzNhZGFiNzRjNTNjZWM4YmY8YzQ3MGY1MTJlMTZiNTc4MzBhQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y1_mMmUwOWQ3NDkwNjY5YTdhZGJhNWY3OTcyMDhjNTVjMTMxODE2MWIxZjU2NGNhODc5ZGYxYjM2YzhlZmMzOGU3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y1_mNDM5YTllMTg1NTAyYjA5NTIxOWJlYThhZDYxNGVjMzkxMzA0ZjY0YTg4ZTNiMTUxY2Y2OTA0NTQ2YWE1M2U1QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23c0ca33&color=%230b8043&color=%234285f4&color=%23d50000&color=%23ad1457&color=%2333b679&color=%23f09300&color=%23b39ddb&color=%23a79b8e&color=%238e24aa&color=%237cb342&color=%236636e0&color=%23b39ddb&color=%237986cb" 
+            title="ภาพรวม" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Tab Content 2: พัฒนาศักยภาพดิจิทัล (Lazy Load) -->
+      <div id="int-tab-2" class="msu-tab-content" role="tabpanel">
+        <div class="msu-iframe-wrapper">
+          <iframe 
+            data-src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FBangkok&showPrint=0&title=%E0%B8%AD%E0%B8%9A%E0%B8%A3%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%92%E0%B8%99%E0%B8%B2%E0%B8%A8%E0%B8%B1%E0%B8%81%E0%B8%A2%E0%B8%A0%E0%B8%B2%E0%B8%9E&src=Y18xZGZhMmFiOWE2ODE0ZjYzNmU3NjA4ZTg0YzFmNWU2YzVmNDQwNGZiNjIyYjc3NTFlZjYwMzU1ZGZiOWNjYjIxQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y1_iY2MyOGU5MzdiYTFiNTIyNGY5YWU0N2E5NTc0NzFkNTFjN2RhYjA5ZDRlZjFlNGRmNDI0MDVhOWRlNTMxNTRkQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y1_kNTIyYzMzZDEwZTkwOGRlNjk3Y2QyODA1MDEzODU0YjIxOTc2N2U0M2I3OTE1M2NkM2RmZjJiNDNjZGMxZWQ5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y1_mMmUwOWQ3NDkwNjY5YTdhZGJhNWY3OTcyMDhjNTVjMTMxODE2MWIxZjU2NGNhODc5ZGYxYjM2YzhlZmMzOGU3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%230b8043&color=%23a79b8e&color=%238e24aa&color=%23b39ddb" 
+            src="" 
+            title="พัฒนาศักยภาพดิจิทัล" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Tab Content 3: บริการวิชาการ (Lazy Load) -->
+      <div id="int-tab-3" class="msu-tab-content" role="tabpanel">
+        <div class="msu-iframe-wrapper">
+          <iframe 
+            data-src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FBangkok&showPrint=0&title=%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%8A%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3&src=Y18yMzIzZjNmMGU4MWVhZmU3NjZkMzQ0M2RmMzdhMmI0ZGYwNDBhODJlYjFkOGM4NjdiZjkzZjE1YjNmNGI0NjU0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y183ODQ1NmI2ZjlhNDlmODYzZWRmZDM4ZTQzZDEwZjkwMmFlNzRlNzRlNzRiM3JiY2NmYmU9ODBlYzA5MjBjYTEzZGMxQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y1_iOWExYjE2OTJjOTU3YmEyNGRkZTY0OTBjZmRmMDQ2ODAzZjQ1YTY4MmNjZjM1ODJkYmU6OGE1NTIxZTdmNGUyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y1_kNmE8MDY3MGVmY2M4OWQ3Njk3Y2VjMWJmMDBhMTQ4YmQ0MTJiMjhjYmYxYmQ3ZDc2MTc1NjFiZmM8MjZjN2JiQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y1_kYjVlMTJjOWFlZDU1MzEwM2ZiOTZjNWUwMTFkNzNhZGFiNzRjNTNjZWM4YmY8YzQ3MGY1MTJlMTZiNTc4MzBhQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y1_mNDM5YTllMTg1NTAyYjA5NTIxOWJlYThhZDYxNGVjMzkxMzA0ZjY0YTg4ZTNiMTUxY2Y2OTA0NTQ2YWE1M2U1QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%234285f4&color=%2333b679&color=%23b39ddb&color=%237cb342&color=%236636e0&color=%237986cb" 
+            src="" 
+            title="บริการวิชาการ" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Tab Content 4: บริการจัดสอบ (Lazy Load) -->
+      <div id="int-tab-4" class="msu-tab-content" role="tabpanel">
+        <div class="msu-iframe-wrapper">
+          <iframe 
+            data-src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FBangkok&showPrint=0&title=%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%88%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%AD%E0%B8%9A&src=Y181MTE1NGJmZGRiZmNjYmU4MTQ1MmNhZWMxNjA0OGY5NTIwN2UyYmZkYTViMTIyOTQ4MGE3OTY3NTE3NGIwMDE2QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23ad1457" 
+            src="" 
+            title="บริการจัดสอบ" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Tab Content 5: การใช้ห้อง B-414 (Lazy Load) -->
+      <div id="int-tab-5" class="msu-tab-content" role="tabpanel">
+        <div class="msu-iframe-wrapper">
+          <iframe 
+            data-src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FBangkok&showPrint=0&title=%E0%B8%95%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%AB%E0%B9%89%E0%B8%AD%E0%B8%87%20B-414&src=Y18zMmI0ZDE3NjEyYzM0Yzc3NTE2ZTVjZTg2ZGQ3ZDZiZWNjM2UzY2NkOGQwYzNmNTc5YmUwNmMzNmVlNDE1MTRkQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y181MTE1NGJmZGRiZmNjYmU4MTQ1MmNhZWMxNjA0OGY5NTIwN2UyYmZkYTViMTIyOTQ4MGE3OTY3NTE3NGIwMDE2QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y1_iOWExYjE2OTJjOTU3YmEyNGRkZTY0OTBjZmRmMDQ2ODAzZjQ1YTY4MmNjZjM1ODJkYmU6OGE1NTIxZTdmNGUyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y1_iY2MyOGU5MzdiYTFiNTIyNGY5YWU0N2E5NTc0NzFkNTFjN2RhYjA5ZDRlZjFlNGRmNDI0MDVhOWRlNTMxNTRkQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y1_kYjVlMTJjOWFlZDU1MzEwM2ZiOTZjNWUwMTFkNzNhZGFiNzRjNTNjZWM4YmY8YzQ3MGY1MTJlMTZiNTc4MzBhQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y1_mMmUwOWQ3NDkwNjY5YTdhZGJhNWY3OTcy0hjNTVjMTMxODE2MWIxZjU2NGNhODc5ZGYxYjM2YzhlZmMzOGU3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23d50000&color=%23ad1457&color=%2333b679&color=%23f09300&color=%23a79b8e&color=%236636e0&color=%23b39ddb" 
+            src="" 
+            title="การใช้ห้อง B-414" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Tab Content 6: ตารางสอบ Digital Literacy Exit Exam (Lazy Load) -->
+      <div id="int-tab-6" class="msu-tab-content" role="tabpanel">
+        <div class="msu-iframe-wrapper">
+          <iframe 
+            data-src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FBangkok&showPrint=0&title=%E0%B8%95%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%97%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%84%E0%B9%82%E0%B8%99%E0%B9%82%E0%B8%A5%E0%B8%A2%E0%B8%B5%E0%B8%94%E0%B8%B4%E0%B8%97%E0%B8%B1%E0%B8%A5&src=Y18zMmI0ZDE3NjEyYzM0Yzc3NTE2ZTVjZTg2ZGQ3ZDZiZWNjM2UzY2NkOGQwYzNmNTc5YmUwNmMzNmVlNDE1MTRkQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23d50000" 
+            src="" 
+            title="ตารางสอบ Digital Literacy Exit Exam" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ส่วนที่ 2: เมนูบริการและข้อมูลฝ่ายพัฒนาศักยภาพดิจิทัล (Sidebar) -->
+    <aside class="msu-sidebar-card">
+      <h3 class="msu-sidebar-title">🔗 ระบบบริการและข้อมูลฝ่าย</h3>
+      
+      <ul class="msu-quick-links">
+        <li>
+          <a href="https://cctraining.msu.ac.th/training-services/" target="_blank" rel="noopener noreferrer" class="msu-link-item">
+            <span class="msu-link-icon">🎓</span>
+            <div>
+              <strong>บริการอบรมพัฒนาศักยภาพฯ</strong>
+              <small>หลักสูตรอบรมด้านเทคโนโลยีดิจิทัล</small>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://cctraining.msu.ac.th/digital-literacy/" target="_blank" rel="noopener noreferrer" class="msu-link-item">
+            <span class="msu-link-icon">💻</span>
+            <div>
+              <strong>การสอบวัดความรู้ Digital Literacy</strong>
+              <small>เกณฑ์ประเมินก่อนสำเร็จการศึกษา</small>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://cctraining.msu.ac.th/publicity-material/" target="_blank" rel="noopener noreferrer" class="msu-link-item">
+            <span class="msu-link-icon">📚</span>
+            <div>
+              <strong>เอกสารเผยแพร่</strong>
+              <small>คู่มือ อินโฟกราฟิก และสื่อการเรียนรู้</small>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://cctraining.msu.ac.th/training-report/" target="_blank" rel="noopener noreferrer" class="msu-link-item">
+            <span class="msu-link-icon">📈</span>
+            <div>
+              <strong>สถิติการดำเนินงานฝ่าย</strong>
+              <small>รายงานสรุปผลการจัดอบรมและบริการ</small>
+            </div>
+          </a>
+        </li>
+      </ul>
+
+      <div class="msu-notice-box">
+        <strong>⚠️ แจ้งเตือนบุคลากร:</strong> กรุณาอัปเดตสถานะงานในปฏิทินและตรวจสอบกำหนดการก่อนเวลา 16.30 น. ของทุกวันศุกร์
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<!-- ============================================================
+  Isolated CSS Stylesheet (แก้ไขอาการสั่น)
+============================================================ -->
+<style>
+  .msu-internal-section {
+    --msu-primary: #0f172a;       
+    --msu-accent: #f59e0b;        
+    --msu-bg-card: #ffffff;
+    --msu-bg-light: #f8fafc;
+    --msu-text-main: #334155;
+    --msu-text-muted: #64748b;
+    --msu-border: #e2e8f0;
+    --msu-radius: 10px;
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    width: 100%;
+    margin: 20px 0;
+    box-sizing: border-box;
+    color: var(--msu-text-main);
+  }
+
+  .msu-internal-section *, 
+  .msu-internal-section *::before, 
+  .msu-internal-section *::after {
+    box-sizing: border-box;
+  }
+
+  /* Header Section */
+  .msu-internal-header {
+    margin-bottom: 20px;
+  }
+
+  .msu-internal-badge {
+    display: inline-block;
+    background-color: #fef3c7;
+    color: #92400e;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-bottom: 6px;
+  }
+
+  .msu-internal-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--msu-primary);
+    margin: 0 0 4px 0;
+    line-height: 1.3;
+  }
+
+  .msu-internal-subtitle {
+    font-size: 14px;
+    color: var(--msu-text-muted);
+    margin: 0;
+  }
+
+  /* Grid Layout */
+  .msu-internal-grid {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 20px;
+    align-items: start;
+  }
+
+  .msu-internal-card, .msu-sidebar-card {
+    background: var(--msu-bg-card);
+    border: 1px solid var(--msu-border);
+    border-radius: var(--msu-radius);
+    padding: 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+
+  /* Navigation Tabs */
+  .msu-tab-nav {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-bottom: 2px solid var(--msu-border);
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+    overflow-x: auto;
+  }
+
+  .msu-tab-btn {
+    background: var(--msu-bg-light);
+    color: var(--msu-text-muted);
+    border: 1px solid var(--msu-border);
+    padding: 8px 14px;
+    font-size: 13.5px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .msu-tab-btn:hover {
+    background: #e2e8f0;
+    color: var(--msu-primary);
+  }
+
+  .msu-tab-btn.active {
+    background: var(--msu-primary);
+    color: #ffffff;
+    border-color: var(--msu-primary);
+  }
+
+  /* สไตล์เส้นกั้นแยกปุ่มภาพรวม */
+  .msu-tab-btn.msu-tab-divider {
+    position: relative;
+    margin-right: 12px;
+  }
+
+  .msu-tab-btn.msu-tab-divider::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 15%;
+    height: 70%;
+    width: 2px;
+    background-color: #cbd5e1;
+    border-radius: 1px;
+  }
+
+  /* Content & iframe Container */
+  .msu-tab-content {
+    display: none;
+  }
+
+  .msu-tab-content.active {
+    display: block;
+    animation: msuFade 0.25s ease-in-out;
+  }
+
+  .msu-iframe-wrapper {
+    position: relative;
+    width: 100%;
+    height: 580px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid var(--msu-border);
+    background: #f1f5f9;
+  }
+
+  .msu-iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  /* Sidebar Section (ปรับปรุง Hover ไม่ให้สั่น) */
+  .msu-sidebar-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 14px 0;
+    color: var(--msu-primary);
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--msu-accent);
+  }
+
+  .msu-quick-links {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px 0;
+  }
+
+  .msu-quick-links li {
+    margin-bottom: 10px;
+  }
+
+  .msu-link-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    background: var(--msu-bg-light);
+    color: var(--msu-text-main);
+    text-decoration: none;
+    border: 1px solid var(--msu-border);
+    /* 🛠️ ปรับแก้: ปิดการใช้ transform ที่ทำให้ตำแหน่งขยับ */
+    transform: none !important;
+    position: relative;
+    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  /* 🛠️ ปรับแก้: การ Hover จะเปลี่ยนแค่สี และเงานุ่มๆ */
+  .msu-link-item:hover {
+    background: #ffffff;
+    border-color: var(--msu-accent);
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.15); 
+  }
+
+  .msu-link-icon {
+    font-size: 20px;
+    transition: transform 0.2s ease;
+  }
+
+  /* ขยายเฉพาะไอคอนเล็กน้อยเพื่อให้การ Hover ยังดูตอบสนอง นุ่มนวล ไม่ทำให้ปุ่มสั่น */
+  .msu-link-item:hover .msu-link-icon {
+    transform: scale(1.15);
+  }
+
+  .msu-link-item strong {
+    display: block;
+    font-size: 13px;
+    line-height: 1.2;
+    color: var(--msu-primary);
+  }
+
+  .msu-link-item small {
+    display: block;
+    font-size: 11px;
+    color: var(--msu-text-muted);
+    margin-top: 2px;
+  }
+
+  .msu-notice-box {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    padding: 10px;
+    font-size: 12px;
+    color: #991b1b;
+    border-radius: 6px;
+    line-height: 1.4;
+  }
+
+  @keyframes msuFade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 900px) {
+    .msu-internal-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .msu-iframe-wrapper {
+      height: 420px;
+    }
+    .msu-internal-title {
+      font-size: 20px;
+    }
+  }
+</style>
+
+<!-- ============================================================
+  JavaScript Component Logic
+============================================================ -->
+<script>
+  function switchInternalTab(event, tabId) {
+    const scope = event.currentTarget.closest('.msu-internal-section');
+    
+    // 1. ซ่อนแท็บทั้งหมด
+    const contents = scope.querySelectorAll('.msu-tab-content');
+    contents.forEach(content => content.classList.remove('active'));
+
+    // 2. เคลียร์สถานะ active ของปุ่ม
+    const buttons = scope.querySelectorAll('.msu-tab-btn');
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    // 3. เปิดแท็บที่เลือก + ทำ Lazy Loading
+    const activeTab = scope.querySelector('#' + tabId);
+    if (activeTab) {
+      activeTab.classList.add('active');
+      
+      const iframe = activeTab.querySelector('iframe');
+      if (iframe && !iframe.getAttribute('src')) {
+        const pendingSrc = iframe.getAttribute('data-src');
+        if (pendingSrc) {
+          iframe.setAttribute('src', pendingSrc);
+        }
+      }
+    }
+
+    // 4. ตั้งค่า active ให้กับปุ่มที่คลิก
+    event.currentTarget.classList.add('active');
+  }
+</script>
